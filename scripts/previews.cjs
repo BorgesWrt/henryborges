@@ -5,6 +5,7 @@ const sharp = require("sharp");
 const root = path.resolve(__dirname, "..");
 const manifestPath = path.join(root, "pics/projects/manifest.json");
 const projects = [
+  ["interior", "https://interior-arts.ru/", "interior-arts"],
   ["zzz", "https://zzz-archive-b6u.pages.dev/", "zzz-archive"],
 ];
 const MAX_AGE = 6 * 60 * 60 * 1000;

@@ -1929,6 +1929,14 @@ html[lang="zh-Hans"] .hero h1 {
   overflow: hidden;
   background: var(--bg);
 }
+.preview-fallback {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .live-preview iframe {
   position: absolute;
   top: 0;
@@ -1940,6 +1948,11 @@ html[lang="zh-Hans"] .hero h1 {
   transform-origin: top left;
   pointer-events: none;
 }
+.preview-fallback + iframe {
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+.live-preview.is-loaded .preview-fallback + iframe { opacity: 1; }
 .preview-hitbox {
   position: absolute;
   inset: 0;

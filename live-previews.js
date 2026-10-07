@@ -1,6 +1,13 @@
 (() => {
   const sourceWidth = 1280;
   const previews = [...document.querySelectorAll("[data-live-preview]")];
+  previews.forEach((preview) => {
+    const iframe = preview.querySelector("iframe");
+    if (!iframe || !preview.querySelector(".preview-fallback")) return;
+    iframe.addEventListener("load", () => {
+      window.setTimeout(() => preview.classList.add("is-loaded"), 500);
+    });
+  });
   function resize(preview) {
     const width = preview.getBoundingClientRect().width;
     if (!width) return;
