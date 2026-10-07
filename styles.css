@@ -1953,6 +1953,14 @@ html[lang="zh-Hans"] .hero h1 {
   transition: opacity 300ms ease;
 }
 .live-preview.is-loaded .preview-fallback + iframe { opacity: 1; }
+@media (max-width: 1024px) {
+  .live-preview iframe { display: none; }
+  .scroll-reveal, .reveal-pending {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
 .preview-hitbox {
   position: absolute;
   inset: 0;

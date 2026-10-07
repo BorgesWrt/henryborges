@@ -1,4 +1,5 @@
 (() => {
+  if (!["127.0.0.1", "localhost"].includes(location.hostname)) return;
   async function update() {
     try {
       const response = await fetch("pics/projects/manifest.json", {
@@ -24,12 +25,10 @@
     }
   }
   update();
-  if (["127.0.0.1", "localhost"].includes(location.hostname)) {
-    setInterval(() => {
-      if (!document.hidden) update();
-    }, 60000);
-    document.addEventListener("visibilitychange", () => {
-      if (!document.hidden) update();
-    });
-  }
+  setInterval(() => {
+    if (!document.hidden) update();
+  }, 60000);
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) update();
+  });
 })();

@@ -1,5 +1,6 @@
 (() => {
   const preference = matchMedia("(prefers-reduced-motion: reduce)");
+  const mobile = matchMedia("(max-width: 1024px)");
   if (!("IntersectionObserver" in window)) return;
   let observer;
   const targets = [
@@ -14,7 +15,7 @@
   function initialize() {
     observer?.disconnect();
     targets.forEach((element) => element.classList.remove("reveal-pending"));
-    if (preference.matches) return;
+    if (preference.matches || mobile.matches) return;
     observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -37,5 +38,6 @@
     if (target) reveal(target);
   });
   preference.addEventListener("change", initialize);
+  mobile.addEventListener("change", initialize);
   initialize();
 })();

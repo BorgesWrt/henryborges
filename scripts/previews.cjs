@@ -6,6 +6,9 @@ const root = path.resolve(__dirname, "..");
 const manifestPath = path.join(root, "pics/projects/manifest.json");
 const projects = [
   ["interior", "https://interior-arts.ru/", "interior-arts"],
+  ["soberu", "https://soberu.soberu-app.workers.dev/", "soberu"],
+  ["lines", "https://lines-of-arts.netlify.app/", "lines-of-arts"],
+  ["ashen", "https://ashen-archive.pages.dev/", "ashen-archive"],
   ["zzz", "https://zzz-archive-b6u.pages.dev/", "zzz-archive"],
 ];
 const MAX_AGE = 6 * 60 * 60 * 1000;
@@ -48,6 +51,8 @@ async function captureAll(force) {
         });
         if (!response?.ok()) throw new Error(`HTTP ${response?.status()}`);
         await page.locator("body").waitFor();
+        if (id === "ashen")
+          await page.getByRole("button", { name: "Decline" }).click({ timeout: 1500 }).catch(() => {});
         await page.evaluate(async () => {
           await Promise.race([
             Promise.all([

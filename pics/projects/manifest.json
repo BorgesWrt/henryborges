@@ -1,12 +1,27 @@
 {
-  "zzz": {
-    "src": "pics/projects/zzz-archive.webp",
-    "url": "https://zzz-archive-b6u.pages.dev/",
-    "capturedAt": "2026-10-07T13:53:14.168Z"
-  },
   "interior": {
     "src": "pics/projects/interior-arts.webp",
     "url": "https://interior-arts.ru/",
-    "capturedAt": "2026-10-07T13:53:11.728Z"
+    "capturedAt": "2026-10-07T17:29:15.138Z"
+  },
+  "soberu": {
+    "src": "pics/projects/soberu.webp",
+    "url": "https://soberu.soberu-app.workers.dev/",
+    "capturedAt": "2026-10-07T17:29:17.737Z"
+  },
+  "lines": {
+    "src": "pics/projects/lines-of-arts.webp",
+    "url": "https://lines-of-arts.netlify.app/",
+    "capturedAt": "2026-10-07T17:29:21.089Z"
+  },
+  "ashen": {
+    "src": "pics/projects/ashen-archive.webp",
+    "url": "https://ashen-archive.pages.dev/",
+    "capturedAt": "2026-10-07T17:29:23.890Z"
+  },
+  "zzz": {
+    "src": "pics/projects/zzz-archive.webp",
+    "url": "https://zzz-archive-b6u.pages.dev/",
+    "capturedAt": "2026-10-07T17:29:26.417Z"
   }
 }
