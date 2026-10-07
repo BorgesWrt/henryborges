@@ -1,6 +1,6 @@
 # Henry Borges · Portfolio
 
-A static HTML/CSS/JavaScript portfolio centered on custom development and independent projects. Desktop project cards can show live homepages; mobile cards use bundled screenshots to keep scrolling smooth. The published site has no runtime dependencies.
+A static HTML/CSS/JavaScript portfolio centered on custom development and independent projects. Project cards use bundled homepage screenshots on every screen size to keep loading and scrolling stable. The published site has no runtime dependencies.
 
 ## Local review
 
@@ -22,11 +22,11 @@ Selected work: Interior Arts, Soberu and Lines of Arts (a published art-history 
 
 ## Automatic homepage previews
 
-On screens wider than 1024px, Interior Arts, Soberu, Lines of Arts and Ashen Archive show their public homepages in iframes over bundled screenshot fallbacks. The preview area scales a 1280-pixel viewport to the card width. On narrower screens the iframes are unloaded and only the screenshots appear, avoiding four independent applications running during a scroll. Links over the previews open each website in a new tab. Live previews require an internet connection and each project's permission to be framed.
+Interior Arts, Soberu, Lines of Arts, Ashen Archive and ZZZ Archive show bundled homepage screenshots on every screen size. The cards link to the live websites in new tabs. No iframe replaces a screenshot after page load, so a blocked or slow third-party page cannot blank a card or trigger repeated rendering.
 
-ZZZ Archive disallows framing through `X-Frame-Options: SAMEORIGIN`, so it always uses a screenshot. `scripts/previews.cjs` captures all five homepages in isolated Chromium contexts, converts them to WebP and records timestamps in `pics/projects/manifest.json`. The dev server refreshes them after six hours. `npm.cmd run previews:refresh` forces an update when Playwright Chromium is installed locally. `npm.cmd run build` copies the saved images and other public files into `dist/` without launching Chromium; Netlify needs no browser installation. Publication remains on hold.
+`scripts/previews.cjs` captures all five homepages in isolated Chromium contexts, converts them to WebP and records timestamps in `pics/projects/manifest.json`. The dev server refreshes the files after six hours; reload the local page to see new captures. `npm.cmd run previews:refresh` forces an update when Playwright Chromium is installed locally. Commit refreshed screenshots to update the published cards. `npm.cmd run build` copies the saved images and other public files into `dist/` without launching Chromium; Netlify needs no browser installation. Publication remains on hold.
 
-All screenshots remain bundled. `previews.js` checks the manifest only during local development; the published site does not reload identical screenshots after page load. Mobile scroll-reveal animation is disabled to reduce paint work.
+Screenshots are never swapped or reloaded by client-side JavaScript. Scroll-reveal animation is disabled on screens up to 1024px to reduce paint work.
 
 ## GA4 (prepared, inactive)
 

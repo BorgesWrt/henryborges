@@ -13,8 +13,6 @@ async function build() {
     "translations.js",
     "site-config.js",
     "analytics.js",
-    "previews.js",
-    "live-previews.js",
     "motion.js",
     "favicon.svg",
     "robots.txt",

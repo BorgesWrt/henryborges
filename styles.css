@@ -1922,39 +1922,20 @@ html[lang="zh-Hans"] .hero h1 {
   font-size: 9px;
   line-height: 1.4;
 }
-.live-preview {
+.project-preview {
   position: relative;
   width: 100%;
   aspect-ratio: 8 / 5;
   overflow: hidden;
   background: var(--bg);
 }
-.preview-fallback {
-  position: absolute;
-  inset: 0;
+.project-preview img {
   display: block;
   width: 100%;
-  height: 100%;
+  aspect-ratio: 8 / 5;
   object-fit: cover;
 }
-.live-preview iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1280px;
-  height: 800px;
-  border: 0;
-  transform: scale(var(--preview-scale, 0.3));
-  transform-origin: top left;
-  pointer-events: none;
-}
-.preview-fallback + iframe {
-  opacity: 0;
-  transition: opacity 300ms ease;
-}
-.live-preview.is-loaded .preview-fallback + iframe { opacity: 1; }
 @media (max-width: 1024px) {
-  .live-preview iframe { display: none; }
   .scroll-reveal, .reveal-pending {
     opacity: 1;
     transform: none;

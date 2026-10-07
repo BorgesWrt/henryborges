@@ -4,7 +4,7 @@
   "version": "2.0.0",
   "scripts": {
     "test": "node --test tests/*.test.cjs",
-    "check": "node --check script.js && node --check translations.js && node --check analytics.js && node --check site-config.js && node --check previews.js && node --check live-previews.js && node --check scripts/previews.cjs && node --check scripts/build.cjs && npm run test",
+    "check": "node --check script.js && node --check translations.js && node --check analytics.js && node --check site-config.js && node --check scripts/previews.cjs && node --check scripts/build.cjs && npm run test",
     "dev": "node scripts/serve.cjs",
     "previews:refresh": "node scripts/previews.cjs",
     "build": "node scripts/build.cjs"
