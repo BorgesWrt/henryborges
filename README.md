@@ -24,7 +24,7 @@ Selected work: Interior Arts, Soberu and Lines of Arts (a published art-history 
 
 Interior Arts, Soberu, Lines of Arts and Ashen Archive appear through embedded iframes of their public homepages. The preview area scales a 1280-pixel viewport to the card width. Links over the previews open each website in a new tab. These previews require an internet connection and each project's permission to be framed; if a project changes its framing policy, its preview will need a fallback.
 
-ZZZ Archive disallows framing through `X-Frame-Options: SAMEORIGIN`, so `scripts/previews.cjs` captures its homepage in an isolated Chromium context, converts it to WebP and records the timestamp in `pics/projects/manifest.json`. The dev server refreshes that image after six hours. `npm.cmd run previews:refresh` forces an update. `npm.cmd run build` refreshes it and copies public files into `dist/`. Netlify is configured for that build, but publication remains on hold.
+ZZZ Archive disallows framing through `X-Frame-Options: SAMEORIGIN`, so `scripts/previews.cjs` captures its homepage in an isolated Chromium context, converts it to WebP and records the timestamp in `pics/projects/manifest.json`. The dev server refreshes that image after six hours. `npm.cmd run previews:refresh` forces an update when Playwright Chromium is installed locally. `npm.cmd run build` copies the saved image and other public files into `dist/` without launching Chromium; Netlify needs no browser installation. Publication remains on hold.
 
 The ZZZ image remains bundled for offline/error fallback. `previews.js` reads its local manifest. Other embedded project previews contact the project websites when loaded.
 

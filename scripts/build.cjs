@@ -1,13 +1,7 @@
 const fs = require("node:fs/promises");
 const path = require("node:path");
-const { refresh } = require("./previews.cjs");
 const root = path.resolve(__dirname, "..");
 async function build() {
-  try {
-    await refresh({ force: true });
-  } catch (error) {
-    console.warn(`Using saved previews: ${error.message}`);
-  }
   const dist = path.join(root, "dist");
   if (path.relative(root, dist) !== "dist") throw new Error("Invalid build directory");
   await fs.rm(dist, { recursive: true, force: true });

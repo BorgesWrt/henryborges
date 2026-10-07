@@ -1,6 +1,6 @@
 [build]
   publish = "dist"
-  command = "npx playwright install --with-deps chromium && npm run build"
+  command = "npm run build"
   ignore = "node scripts/ignore-build.cjs"
 
 [[headers]]
