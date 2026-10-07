@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f3ec" />
+    <title>Henry Borges — Frontend Developer & Independent Web Projects</title>
+    <meta
+      name="description"
+      content="Henry Borges develops custom websites and web applications. Explore Interior Arts, Ashen Archive, Soberu and more independent projects."
+    />
+    <link rel="canonical" href="https://henryborges.netlify.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Henry Borges — Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Independent web projects, thoughtful interfaces and custom development."
+    />
+    <meta property="og:url" content="https://henryborges.netlify.app/" />
+    <meta
+      property="og:image"
+      content="https://henryborges.netlify.app/pics/social-preview.png"
+    />
+    <meta property="og:image:alt" content="Henry Borges — frontend developer" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="translations.js" defer></script>
+    <script src="site-config.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="previews.js" defer></script>
+    <script src="live-previews.js" defer></script>
+    <script src="motion.js" defer></script>
+    <script src="analytics.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a
+          href="#home"
+          class="brand"
+          aria-label="Henry Borges home"
+          data-i18n-aria="brandHome"
+          ><span>HENRY</span><span>BORGES</span></a
+        >
+        <nav
+          id="navigation"
+          class="navigation"
+          aria-label="Main navigation"
+          data-i18n-aria="navLabel"
+        >
+          <a href="#projects" data-i18n="navWork">Work</a
+          ><a href="#network" data-i18n="networkNav">Site network</a
+          ><a href="#about" data-i18n="navAbout">About</a
+          ><a href="#skills" data-i18n="navSkills">Skills</a
+          ><a href="#contact" class="nav-contact"
+            ><span data-i18n="navContact">Let’s talk</span
+            ><span aria-hidden="true">↗</span></a
+          >
+        </nav>
+        <div class="header-controls">
+          <label class="language-control"
+            ><span class="sr-only" data-i18n="language">Language</span
+            ><span aria-hidden="true">◎</span
+            ><select
+              id="language"
+              aria-label="Language"
+              data-i18n-aria="language"
+            >
+              <option value="en">English</option>
+              <option value="ru">Русский</option>
+              <option value="es">Español</option>
+              <option value="vi">Tiếng Việt</option>
+              <option value="zh">中文</option>
+            </select></label
+          ><button
+            class="icon-button"
+            id="theme-toggle"
+            aria-label="Switch color theme"
+            data-i18n-aria="theme"
+            aria-pressed="false"
+          >
+            <span aria-hidden="true">◐</span></button
+          ><button
+            class="menu-toggle icon-button"
+            aria-controls="navigation"
+            aria-expanded="false"
+            aria-label="Open navigation"
+            data-i18n-aria="menu"
+          >
+            <span aria-hidden="true">☰</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero container" id="home" aria-labelledby="hero-title">
+        <div class="hero-top">
+          <p class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span
+            ><span data-i18n="heroEyebrow"
+              >HENRY BORGES · FRONTEND DEVELOPER</span
+            >
+          </p>
+          <span class="edition" data-i18n="edition">PORTFOLIO / 2026</span>
+        </div>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <h1 id="hero-title">
+              <span data-i18n="heroLine1">Websites and</span
+              ><span data-i18n="heroLine2">web applications.</span>
+            </h1>
+            <p class="hero-description" data-i18n="heroDescription">
+              I develop custom websites and web applications with React and
+              TypeScript. My projects include art catalogs, content platforms
+              and services with maps and recommendations.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="button primary"
+                ><span data-i18n="viewWork">Explore my work</span
+                ><span aria-hidden="true">↘</span></a
+              ><a
+                href="https://github.com/BorgesWrt"
+                class="text-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub ↗</a
+              >
+            </div>
+          </div>
+          <div
+            class="hero-art"
+            aria-label="Preview of Interior Arts"
+            data-i18n-aria="heroArt"
+          >
+            <div class="browser-frame hero-browser">
+              <div class="browser-bar">
+                <span class="browser-dots" aria-hidden="true">● ● ●</span
+                ><span>interior-arts.ru</span>
+              </div>
+              <div class="live-preview" data-live-preview>
+                <iframe
+                  src="https://interior-arts.ru/"
+                  title="Interior Arts live preview"
+                  loading="eager"
+                  tabindex="-1"
+                  aria-hidden="true"
+                  sandbox="allow-scripts allow-same-origin allow-forms"
+                  referrerpolicy="no-referrer"
+                ></iframe>
+              </div>
+            </div>
+            <div class="hero-preview-caption">
+              <span>Interior Arts</span
+              ><a href="#projects" data-i18n="viewWork">Explore my work</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-bottom">
+          <span data-i18n="heroNote"
+            >Catalogs · Web applications · Interactive interfaces</span
+          ><a href="#projects"
+            ><span data-i18n="scroll">SCROLL TO EXPLORE</span
+            ><span aria-hidden="true">↓</span></a
+          >
+        </div>
+      </section>
+      <div
+        class="stack-band"
+        aria-label="Core technologies"
+        data-i18n-aria="coreTechnologies"
+      >
+        <div class="container">
+          <span>React</span><span aria-hidden="true">·</span
+          ><span>TypeScript</span><span aria-hidden="true">·</span
+          ><span>JavaScript</span><span aria-hidden="true">·</span
+          ><span>CSS</span><span aria-hidden="true">·</span
+          ><span data-i18n="customDevelopment">Custom development</span>
+        </div>
+      </div>
+      <section
+        id="projects"
+        class="section container"
+        aria-labelledby="work-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="workEyebrow">01 / SELECTED WORK</p>
+            <h2 id="work-title">
+              <span data-i18n="workTitle">Selected work</span>
+            </h2>
+          </div>
+          <p data-i18n="workIntro">
+            Three published projects with different goals: art exploration,
+            meeting planning and the history of painting.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project">
+            <div class="project-visual interior-visual">
+              <span class="visual-caption" data-i18n="interiorCaption"
+                >INTERIOR ARTS / WEB EXPERIENCE</span
+              >
+              <div class="browser-frame">
+                <div class="browser-bar">
+                  <span class="browser-dots" aria-hidden="true">● ● ●</span
+                  ><span>interior-arts.ru</span>
+                </div>
+                <div class="live-preview" data-live-preview>
+                  <iframe
+                    src="https://interior-arts.ru/"
+                    title="Interior Arts live preview"
+                    loading="lazy"
+                    tabindex="-1"
+                    aria-hidden="true"
+                    sandbox="allow-scripts allow-same-origin allow-forms"
+                    referrerpolicy="no-referrer"
+                  ></iframe>
+                </div>
+              </div>
+              <span class="visual-index" aria-hidden="true">01</span
+              ><a
+                class="preview-hitbox"
+                href="https://interior-arts.ru/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Interior Arts"
+                data-i18n-aria="interiorVisit"
+              ></a>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span data-i18n="interiorType">ART CATALOG & INTERIOR TOOL</span
+                ><span class="live-badge" data-i18n="live">LIVE</span>
+              </div>
+              <h3>Interior Arts</h3>
+              <p data-i18n="interiorDescription">
+                A custom website for original art. An editorial catalog, artist
+                profiles and an interactive tool to explore paintings in an
+                interior.
+              </p>
+              <ul
+                class="tags"
+                aria-label="Technology"
+                data-i18n-aria="technology"
+              >
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Zustand</li>
+                <li>Vite</li>
+              </ul>
+              <div class="project-actions">
+                <button class="text-link" data-case="interior">
+                  <span data-i18n="viewCase">Inside the project</span> ↗</button
+                ><a
+                  class="text-link subtle"
+                  href="https://interior-arts.ru/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><span data-i18n="visitSite">Visit site</span> ↗</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-visual soberu-visual">
+              <span class="visual-caption" data-i18n="soberuCaption"
+                >SOBERU / MEETING PLANNER</span
+              >
+              <div class="browser-frame">
+                <div class="browser-bar">
+                  <span class="browser-dots" aria-hidden="true">● ● ●</span
+                  ><span>soberu.soberu-app.workers.dev</span>
+                </div>
+                <div class="live-preview" data-live-preview>
+                  <iframe
+                    src="https://soberu.soberu-app.workers.dev/"
+                    title="Soberu live preview"
+                    loading="lazy"
+                    tabindex="-1"
+                    aria-hidden="true"
+                    sandbox="allow-scripts allow-same-origin allow-forms"
+                    referrerpolicy="no-referrer"
+                  ></iframe>
+                </div>
+              </div>
+              <span class="visual-index" aria-hidden="true">02</span
+              ><a
+                class="preview-hitbox"
+                href="https://soberu.soberu-app.workers.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Soberu"
+                data-i18n-aria="soberuVisit"
+              ></a>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span data-i18n="soberuType">WEB APPLICATION</span
+                ><span class="live-badge" data-i18n="beta">BETA</span>
+              </div>
+              <h3>Soberu</h3>
+              <p data-i18n="soberuDescription">
+                A meeting planner for friends. Brings together preferences,
+                personal budgets and places to suggest plans in Moscow and Saint
+                Petersburg.
+              </p>
+              <ul
+                class="tags"
+                aria-label="Technology"
+                data-i18n-aria="technology"
+              >
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>MapLibre</li>
+                <li>SQLite / D1</li>
+              </ul>
+              <div class="project-actions">
+                <button class="text-link" data-case="soberu">
+                  <span data-i18n="viewCase">Inside the project</span>
+                  ↗</button
+                ><a
+                  class="text-link subtle"
+                  href="https://soberu.soberu-app.workers.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><span data-i18n="visitSite">Visit site</span> ↗</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="project lines-project">
+            <div class="project-visual lines-visual">
+              <span class="visual-caption">LINES OF ARTS</span>
+              <div class="browser-frame">
+                <div class="browser-bar">
+                  <span class="browser-dots" aria-hidden="true">● ● ●</span
+                  ><span>lines-of-arts.netlify.app</span>
+                </div>
+                <div class="live-preview" data-live-preview>
+                  <iframe
+                    src="https://lines-of-arts.netlify.app/"
+                    title="Lines of Arts live preview"
+                    loading="lazy"
+                    tabindex="-1"
+                    aria-hidden="true"
+                    sandbox="allow-scripts allow-same-origin allow-forms"
+                    referrerpolicy="no-referrer"
+                  ></iframe>
+                </div>
+              </div>
+              <span class="visual-index" aria-hidden="true">03</span
+              ><a
+                class="preview-hitbox"
+                href="https://lines-of-arts.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Lines of Arts"
+                data-i18n-aria="linesVisit"
+              ></a>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span data-i18n="linesType">ART HISTORY REFERENCE</span
+                ><span class="live-badge" data-i18n="linesStatus"
+                  >LIVE</span
+                >
+              </div>
+              <h3>Lines of Arts</h3>
+              <p data-i18n="linesDescription">
+                Explore the development of European painting through movements,
+                artists, works and teacher–student connections.
+              </p>
+              <div class="project-actions">
+                <button class="text-link" data-case="lines">
+                  <span data-i18n="viewCase">Inside the project</span> ↗
+                </button>
+                <a
+                  class="text-link muted-link"
+                  href="https://lines-of-arts.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><span data-i18n="visitSite">Visit site</span> ↗</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section
+        id="network"
+        class="network-section section"
+        aria-labelledby="network-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow" data-i18n="networkEyebrow">
+                02 / INDEPENDENT PUBLISHING
+              </p>
+              <h2 id="network-title" data-i18n="networkTitle">
+                A growing network of sites.
+              </h2>
+            </div>
+            <p data-i18n="networkIntro">
+              Alongside web applications, I develop a network of independent
+              gaming resources. Each site has its own subject, content structure
+              and interface.
+            </p>
+          </div>
+          <div class="network-heading">
+            <span class="eyebrow" data-i18n="networkNote"
+              >ACTIVE DEVELOPMENT</span
+            ><span aria-hidden="true">Ashen / ZZZ / Elden Ring</span>
+          </div>
+          <div class="network-grid">
+            <article class="project">
+              <div class="project-visual ashen-visual">
+                <span class="visual-caption" data-i18n="ashenCaption"
+                  >ASHEN ARCHIVE / GAME COMPANION</span
+                >
+                <div class="browser-frame">
+                  <div class="browser-bar">
+                    <span class="browser-dots" aria-hidden="true">● ● ●</span
+                    ><span>ashen-archive.pages.dev</span>
+                  </div>
+                  <div class="live-preview" data-live-preview>
+                    <iframe
+                      src="https://ashen-archive.pages.dev/"
+                      title="Ashen Archive live preview"
+                      loading="lazy"
+                      tabindex="-1"
+                      aria-hidden="true"
+                      sandbox="allow-scripts allow-same-origin allow-forms"
+                      referrerpolicy="no-referrer"
+                    ></iframe>
+                  </div>
+                </div>
+                <span class="visual-index" aria-hidden="true">02</span
+                ><a
+                  class="preview-hitbox"
+                  href="https://ashen-archive.pages.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit Ashen Archive"
+                  data-i18n-aria="ashenVisit"
+                ></a>
+              </div>
+              <div class="project-content">
+                <div class="project-meta">
+                  <span data-i18n="ashenType">EDITORIAL & SEARCH</span
+                  ><span class="live-badge" data-i18n="live">LIVE</span>
+                </div>
+                <h3>Ashen Archive</h3>
+                <p data-i18n="ashenDescription">
+                  An independent Dark Souls III companion. Builds, weapons, boss
+                  strategies and guides in a distinctive, searchable archive.
+                </p>
+                <ul
+                  class="tags"
+                  aria-label="Technology"
+                  data-i18n-aria="technology"
+                >
+                  <li>React</li>
+                  <li data-i18n="search">Search</li>
+                  <li>SEO</li>
+                  <li>Cloudflare Pages</li>
+                </ul>
+                <div class="project-actions">
+                  <button class="text-link" data-case="ashen">
+                    <span data-i18n="viewCase">Inside the project</span>
+                    ↗</button
+                  ><a
+                    class="text-link subtle"
+                    href="https://ashen-archive.pages.dev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><span data-i18n="visitSite">Visit site</span> ↗</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="project">
+              <a
+                class="project-visual zzz-visual"
+                href="https://zzz-archive-b6u.pages.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="ZZZ Archive"
+                ><span class="visual-caption"
+                  >ZZZ ARCHIVE / ZENLESS ZONE ZERO</span
+                >
+                <div class="browser-frame">
+                  <div class="browser-bar">
+                    <span>zzz-archive-b6u.pages.dev</span>
+                  </div>
+                  <img
+                    src="pics/projects/zzz-archive.webp"
+                    data-preview="zzz"
+                    width="1280"
+                    height="800"
+                    loading="lazy"
+                    alt="ZZZ Archive homepage"
+                    data-i18n-alt="zzzAlt"
+                  /></div
+              ></a>
+              <div class="project-content">
+                <div class="project-meta">
+                  <span>ZENLESS ZONE ZERO</span
+                  ><span class="live-badge" data-i18n="live">LIVE</span>
+                </div>
+                <h3>ZZZ Archive</h3>
+                <p data-i18n="zzzDescription">
+                  A Zenless Zone Zero resource connecting characters, equipment
+                  and guides through search and a knowledge graph.
+                </p>
+                <div class="project-actions">
+                  <a
+                    class="text-link"
+                    href="https://zzz-archive-b6u.pages.dev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><span data-i18n="visitSite">Visit site</span> ↗</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="project network-upcoming">
+              <div class="upcoming-visual" aria-hidden="true">
+                <span class="upcoming-orbit"></span><span>ELDEN<br />RING</span
+                ><span class="upcoming-caption">ARCHIVE / NEXT CHAPTER</span>
+              </div>
+              <div class="project-content">
+                <div class="project-meta">
+                  <span class="development-badge" data-i18n="development"
+                    >IN DEVELOPMENT</span
+                  >
+                </div>
+                <h3>Elden Ring</h3>
+                <p data-i18n="eldenDescription">
+                  The next site in the network, dedicated to Elden Ring.
+                  Currently in development; a public version is not yet
+                  available.
+                </p>
+              </div>
+            </article>
+          </div>
+          <p class="network-footer" data-i18n="networkFooter">
+            An ongoing product practice: organizing content, connecting related
+            material and evolving interfaces as each resource grows.
+          </p>
+        </div>
+      </section>
+      <section
+        class="section container approach-section"
+        aria-labelledby="approach-title"
+      >
+        <p class="eyebrow" data-i18n="approachEyebrow">03 / HOW I WORK</p>
+        <h2 id="approach-title" data-i18n="approachTitle">
+          From the task to a working product.
+        </h2>
+        <div class="usp-grid">
+          <article>
+            <span class="usp-number">01</span>
+            <h3 data-i18n="usp1Title">Interfaces with application logic</h3>
+            <p data-i18n="usp1Body">
+              Catalogs, search, maps and interactive tools. Interior Arts and
+              Soberu show how I connect an interface to a concrete user task.
+            </p>
+          </article>
+          <article>
+            <span class="usp-number">02</span>
+            <h3 data-i18n="usp2Title">Structure that can grow</h3>
+            <p data-i18n="usp2Body">
+              I organize content and relationships between pages. The archive
+              network is where I develop this approach across different
+              subjects.
+            </p>
+          </article>
+          <article>
+            <span class="usp-number">03</span>
+            <h3 data-i18n="usp3Title">Development beyond the first release</h3>
+            <p data-i18n="usp3Body">
+              I continue developing my own products after launch: extending
+              features, improving navigation and keeping track of what still
+              needs work.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section id="about" class="about-section">
+        <div class="container about-grid">
+          <div class="portrait-wrap">
+            <img
+              src="pics/Me.jpg"
+              width="1280"
+              height="1280"
+              loading="lazy"
+              alt="Portrait of Henry Borges"
+              data-i18n-alt="portraitAlt"
+            /><span class="portrait-caption">HENRY BORGES / BORGESWRT</span>
+          </div>
+          <div class="about-copy">
+            <p class="eyebrow" data-i18n="aboutEyebrow">04 / ABOUT</p>
+            <h2 data-i18n="aboutTitle">About the developer</h2>
+            <p class="large-copy" data-i18n="aboutLead">
+              My focus is frontend development: from page structure to
+              application logic.
+            </p>
+            <p data-i18n="aboutBody">
+              I work with React, TypeScript and JavaScript. I develop responsive
+              interfaces, connect APIs and build search, catalog and map
+              features. I pay attention to usability, accessibility and the
+              details of implementation.
+            </p>
+            <p data-i18n="aboutFocus">
+              The projects here show how I apply these tools to different tasks.
+              Each case includes a working website and a description of its
+              features.
+            </p>
+            <a
+              class="text-link"
+              href="https://github.com/BorgesWrt"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span data-i18n="aboutGitHub">Find me on GitHub</span> ↗</a
+            >
+          </div>
+        </div>
+      </section>
+      <section
+        id="skills"
+        class="section container"
+        aria-labelledby="skills-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="skillsEyebrow">05 / TECHNOLOGIES</p>
+            <h2 id="skills-title" data-i18n="skillsTitle">
+              Technologies and tools
+            </h2>
+          </div>
+          <p data-i18n="skillsIntro">
+            Custom development is my focus. I also work with existing platforms
+            when the project calls for them.
+          </p>
+        </div>
+        <div class="skill-grid">
+          <article>
+            <span class="skill-number">01</span>
+            <h3 data-i18n="skillFrontend">Frontend development</h3>
+            <p>
+              JavaScript · TypeScript · React · HTML · CSS · Tailwind CSS · Vue
+            </p>
+          </article>
+          <article>
+            <span class="skill-number">02</span>
+            <h3 data-i18n="skillExperience">Interface & experience</h3>
+            <p data-i18n="skillExperienceBody">
+              Responsive layouts · Figma · Animation · Three.js · Spline ·
+              Accessible interactions
+            </p>
+          </article>
+          <article>
+            <span class="skill-number">03</span>
+            <h3 data-i18n="skillProduct">Product & delivery</h3>
+            <p data-i18n="skillProductBody">
+              Git & GitHub · Vite · REST APIs · MapLibre · SQLite / D1 · SEO ·
+              Netlify · Cloudflare
+            </p>
+          </article>
+          <article class="platform-skill">
+            <span class="skill-number">04</span>
+            <h3 data-i18n="skillPlatforms">Platforms & CRM</h3>
+            <p data-i18n="skillPlatformsBody">1C-Bitrix · Bitrix24</p>
+            <span class="skill-note" data-i18n="skillPlatformsNote"
+              >An additional skill alongside custom web development.</span
+            >
+          </article>
+        </div>
+      </section>
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <p class="eyebrow" data-i18n="contactEyebrow">06 / CONTACT</p>
+          <div class="contact-heading">
+            <h2 data-i18n="contactTitle">Let’s discuss<br />your project.</h2>
+            <a
+              class="contact-arrow"
+              href="mailto:andreyzh24@gmail.com"
+              aria-label="Email Henry Borges"
+              data-i18n-aria="emailLabel"
+              >↗</a
+            >
+          </div>
+          <div class="contact-bottom">
+            <p data-i18n="contactDescription">
+              Let’s talk about your website, product or next idea.
+            </p>
+            <div>
+              <a class="email-link" href="mailto:andreyzh24@gmail.com"
+                >andreyzh24@gmail.com</a
+              >
+              <div class="contact-links">
+                <a href="tel:+79267629814">+7 (926) 762-98-14</a
+                ><a
+                  href="https://github.com/BorgesWrt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub ↗</a
+                ><a
+                  href="https://codepen.io/borgeswrt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >CodePen ↗</a
+                ><button
+                  id="copy-email"
+                  class="copy-email"
+                  data-i18n="copyEmail"
+                >
+                  Copy email
+                </button>
+              </div>
+              <p class="copy-status" role="status" id="copy-status"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container footer">
+      <a href="#home" class="footer-brand">Henry Borges</a>
+      <p>
+        © <span id="year">2026</span>
+        <span data-i18n="footer">Frontend development · Henry Borges</span>
+      </p>
+      <div class="footer-actions">
+        <button
+          id="analytics-settings"
+          class="privacy-button"
+          hidden
+          data-i18n="analyticsSettings"
+        >
+          Analytics settings</button
+        ><a href="#home" class="back-top"
+          ><span data-i18n="backTop">Back to top</span> ↑</a
+        >
+      </div>
+    </footer>
+    <dialog id="case-dialog" aria-labelledby="case-title">
+      <div class="dialog-top">
+        <span class="eyebrow" data-i18n="caseEyebrow">PROJECT NOTES</span
+        ><button
+          id="close-dialog"
+          class="icon-button"
+          aria-label="Close project"
+          data-i18n-aria="close"
+        >
+          ×
+        </button>
+      </div>
+      <h2 id="case-title"></h2>
+      <p id="case-summary" class="large-copy"></p>
+      <h3 data-i18n="caseChallenge">The idea</h3>
+      <p id="case-challenge"></p>
+      <h3 data-i18n="caseBuilt">What I built</h3>
+      <ul id="case-features"></ul>
+      <p class="case-status" id="case-status"></p>
+      <a
+        id="case-link"
+        class="button primary"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><span data-i18n="visitSite">Visit site</span> ↗</a
+      >
+    </dialog>
+    <section
+      class="analytics-banner"
+      id="analytics-banner"
+      hidden
+      aria-label="Analytics preference"
+      data-i18n-aria="analyticsLabel"
+    >
+      <div>
+        <h2 data-i18n="analyticsTitle">A little insight?</h2>
+        <p data-i18n="analyticsDescription">
+          With your permission, Google Analytics helps me understand how this
+          portfolio is used. It stays off until you agree.
+        </p>
+      </div>
+      <div class="analytics-actions">
+        <button
+          id="analytics-accept"
+          class="button primary"
+          data-i18n="analyticsAccept"
+        >
+          Allow analytics</button
+        ><button
+          id="analytics-decline"
+          class="button secondary"
+          data-i18n="analyticsDecline"
+        >
+          No thanks
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
