@@ -8,7 +8,7 @@ const source = fs.readFileSync(
 );
 function setup({
   id = "G-TEST123",
-  hostname = "henryborges.netlify.app",
+  hostname = "henryborges.pages.dev",
   choice = null,
 } = {}) {
   const nodes = new Map();
@@ -33,7 +33,7 @@ function setup({
     window: {
       portfolioConfig: {
         gaMeasurementId: id,
-        analyticsHostnames: ["henryborges.netlify.app"],
+        analyticsHostnames: ["henryborges.pages.dev"],
       },
     },
     location: { hostname, origin: `https://${hostname}`, pathname: "/" },
@@ -66,7 +66,7 @@ test("missing ID, localhost and preview domains never initialize tracking", () =
     { id: "" },
     { hostname: "localhost" },
     { hostname: "127.0.0.1" },
-    { hostname: "preview--henryborges.netlify.app" },
+    { hostname: "preview--henryborges.pages.dev" },
   ]) {
     const s = setup({ ...args, choice: "granted" });
     assert.equal(s.inserted.length, 0);
@@ -91,7 +91,7 @@ test("consent loads once, emits pageview, and can be withdrawn and restored", ()
   const calls = s.context.window.dataLayer.map((args) => Array.from(args));
   const config = calls.find((c) => c[0] === "config");
   assert.equal(config[2].send_page_view, true);
-  assert.equal(config[2].page_location, "https://henryborges.netlify.app/");
+  assert.equal(config[2].page_location, "https://henryborges.pages.dev/");
   assert.equal(config[2].allow_google_signals, false);
   s.click("analytics-settings");
   assert.equal(s.nodes.get("analytics-banner").hidden, false);

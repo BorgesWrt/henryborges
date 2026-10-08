@@ -7,10 +7,10 @@ const manifestPath = path.join(root, "pics/projects/manifest.json");
 const projects = [
   ["interior", "https://interior-arts.ru/", "interior-arts"],
   ["soberu", "https://soberu.soberu-app.workers.dev/", "soberu"],
-  ["lines", "https://lines-of-arts.netlify.app/", "lines-of-arts"],
+  ["lines", "https://lines-of-arts.pages.dev/", "lines-of-arts"],
   ["ashen", "https://ashen-archive.pages.dev/", "ashen-archive"],
-  ["zzz", "https://zzz-archive-b6u.pages.dev/", "zzz-archive"],
-  ["elden", "https://elden-ring-archive.netlify.app/", "elden-ring-archive"],
+  ["zzz", "https://zenless-archive.pages.dev/", "zzz-archive"],
+  ["elden", "https://elden-ring-archive.pages.dev/", "elden-ring-archive"],
 ];
 const MAX_AGE = 6 * 60 * 60 * 1000;
 function isStale(entry, now = Date.now()) {

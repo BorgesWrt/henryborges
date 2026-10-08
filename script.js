@@ -53,7 +53,7 @@
     interior: { title: "Interior Arts", url: "https://interior-arts.ru/" },
     ashen: { title: "Ashen Archive", url: "https://ashen-archive.pages.dev/" },
     soberu: { title: "Soberu", url: "https://soberu.soberu-app.workers.dev/" },
-    lines: { title: "Lines of Arts", url: "https://lines-of-arts.netlify.app/" },
+    lines: { title: "Lines of Arts", url: "https://lines-of-arts.pages.dev/" },
   };
   function renderCase(id) {
     const project = cases[id];

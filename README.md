@@ -24,7 +24,7 @@ Selected work: Interior Arts, Soberu and Lines of Arts (a published art-history 
 
 Interior Arts, Soberu, Lines of Arts, Ashen Archive, ZZZ Archive and Elden Ring Archive show bundled homepage screenshots on every screen size. The cards link to the live websites in new tabs. No iframe replaces a screenshot after page load, so a blocked or slow third-party page cannot blank a card or trigger repeated rendering.
 
-`scripts/previews.cjs` captures all six homepages in isolated Chromium contexts, converts them to WebP and records timestamps in `pics/projects/manifest.json`. The dev server refreshes the files after six hours; reload the local page to see new captures. `npm.cmd run previews:refresh` forces an update when Playwright Chromium is installed locally. Commit refreshed screenshots to update the published cards. `npm.cmd run build` copies the saved images and other public files into `dist/` without launching Chromium; Netlify needs no browser installation.
+`scripts/previews.cjs` captures all six homepages in isolated Chromium contexts, converts them to WebP and records timestamps in `pics/projects/manifest.json`. The dev server refreshes the files after six hours; reload the local page to see new captures. `npm.cmd run previews:refresh` forces an update when Playwright Chromium is installed locally. Commit refreshed screenshots to update the published cards. `npm.cmd run build` copies the saved images and other public files into `dist/` without launching Chromium; Cloudflare needs no browser installation.
 
 Screenshots are never swapped or reloaded by client-side JavaScript. Scroll-reveal animation is disabled on screens up to 1024px to reduce paint work.
 
@@ -34,10 +34,10 @@ Set the portfolio web stream's `gaMeasurementId` in `site-config.js` to its `G-.
 
 Tracking is allowed only on the exact configured production hostname. Localhost and preview traffic are excluded. The Google tag loads only after the visitor permits analytics. Visitors can reopen preferences in the footer and withdraw consent. Ad storage, ad personalization and Google signals stay disabled. Pageviews, language changes and project-note opens are measured; form contents and contact details are not sent. No message submission form is present.
 
-When production deploys resume, verify the stream using GA4 Realtime / Tag Assistant after granting consent. No production data has been verified during local review. Google Analytics measurement is separate from Google Search Console indexing.
+If GA4 is configured, verify the stream using GA4 Realtime / Tag Assistant after granting consent. No production data has been verified. Google Analytics measurement is separate from Google Search Console indexing.
 
 ## Deployment
 
-Netlify is linked to `BorgesWrt/henryborges` and configured to build `main` with `npm run build`, publishing `dist/`. Git commits should omit `[skip netlify]` when a production update is intended. If the Netlify team has exhausted its monthly credits, production deploys remain paused regardless of repository settings; verify the deploy status and live URL after credits refresh or the team plan changes.
+Cloudflare Pages is linked to `BorgesWrt/henryborges` and builds `main` with `npm run build`, publishing `dist/` at `https://henryborges.pages.dev/`. Verify the deployment and live URL after pushing updates. The earlier Netlify site is retained temporarily during migration and is not the canonical origin.
 
-References: [Netlify deploy skipping](https://docs.netlify.com/deploy/manage-deploys/manage-deploys-overview/), [Netlify ignore builds](https://docs.netlify.com/build/configure-builds/ignore-builds/), [Google basic consent mode](https://developers.google.com/tag-platform/security/concepts/consent-mode), [Google tag privacy settings](https://developers.google.com/tag-platform/security/guides/privacy).
+References: [Cloudflare Pages Git integration](https://developers.cloudflare.com/pages/configuration/git-integration/), [Google basic consent mode](https://developers.google.com/tag-platform/security/concepts/consent-mode), [Google tag privacy settings](https://developers.google.com/tag-platform/security/guides/privacy).
