@@ -2,26 +2,31 @@
   "interior": {
     "src": "pics/projects/interior-arts.webp",
     "url": "https://interior-arts.ru/",
-    "capturedAt": "2026-10-07T17:29:15.138Z"
+    "capturedAt": "2026-10-08T14:52:10.286Z"
   },
   "soberu": {
     "src": "pics/projects/soberu.webp",
     "url": "https://soberu.soberu-app.workers.dev/",
-    "capturedAt": "2026-10-07T17:29:17.737Z"
+    "capturedAt": "2026-10-08T14:52:13.759Z"
   },
   "lines": {
     "src": "pics/projects/lines-of-arts.webp",
     "url": "https://lines-of-arts.netlify.app/",
-    "capturedAt": "2026-10-07T17:29:21.089Z"
+    "capturedAt": "2026-10-08T14:52:17.888Z"
   },
   "ashen": {
     "src": "pics/projects/ashen-archive.webp",
     "url": "https://ashen-archive.pages.dev/",
-    "capturedAt": "2026-10-07T17:29:23.890Z"
+    "capturedAt": "2026-10-08T14:52:21.537Z"
   },
   "zzz": {
     "src": "pics/projects/zzz-archive.webp",
     "url": "https://zzz-archive-b6u.pages.dev/",
     "capturedAt": "2026-10-07T17:29:26.417Z"
+  },
+  "elden": {
+    "src": "pics/projects/elden-ring-archive.webp",
+    "url": "https://elden-ring-archive.netlify.app/",
+    "capturedAt": "2026-10-08T14:52:36.203Z"
   }
 }

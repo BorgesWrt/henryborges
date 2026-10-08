@@ -1740,6 +1740,12 @@ html[lang="zh-Hans"] .hero h1 {
 .zzz-visual .visual-caption {
   color: #e7edf4;
 }
+.elden-visual {
+  background: #25281f;
+}
+.elden-visual .visual-caption {
+  color: #d9cba3;
+}
 .network-footer {
   margin-top: 32px;
   max-width: 720px;

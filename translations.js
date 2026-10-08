@@ -144,8 +144,11 @@ window.portfolioTranslations = {
       "A Zenless Zone Zero resource connecting characters, equipment and guides through search and a knowledge graph.",
     zzzAlt: "ZZZ Archive homepage",
     development: "IN DEVELOPMENT",
+    eldenType: "PVE FIELD MANUAL",
+    eldenAlt: "Elden Ring Archive homepage",
+    eldenVisit: "Visit Elden Ring Archive",
     eldenDescription:
-      "The next site in the network, dedicated to Elden Ring. Currently in development; a public version is not yet available.",
+      "A practical Elden Ring PvE reference with builds, equipment, boss strategies and guides for the base game and expansion.",
     networkFooter:
       "An ongoing product practice: organizing content, connecting related material and evolving interfaces as each resource grows.",
     approachEyebrow: "03 / HOW I WORK",
@@ -322,8 +325,11 @@ window.portfolioTranslations = {
       "Ресурс по Zenless Zone Zero: персонажи, экипировка и гайды, связанные через поиск и граф знаний.",
     zzzAlt: "Главная страница ZZZ Archive",
     development: "В РАЗРАБОТКЕ",
+    eldenType: "СПРАВОЧНИК ПО PVE",
+    eldenAlt: "Главная страница Elden Ring Archive",
+    eldenVisit: "Открыть Elden Ring Archive",
     eldenDescription:
-      "Следующий сайт сети — по Elden Ring. Сейчас в разработке; публичная версия пока недоступна.",
+      "Практический справочник по Elden Ring: PvE-билды, снаряжение, тактики против боссов и гайды по основной игре и дополнению.",
     networkFooter:
       "Постоянная работа над продуктами: систематизирую контент, связываю материалы и развиваю интерфейсы по мере роста ресурсов.",
     approachEyebrow: "03 / ПОДХОД К РАБОТЕ",
@@ -502,8 +508,11 @@ window.portfolioTranslations = {
       "Un recurso de Zenless Zone Zero que conecta personajes, equipo y guías mediante búsquedas y un grafo de conocimiento.",
     zzzAlt: "Página principal de ZZZ Archive",
     development: "EN DESARROLLO",
+    eldenType: "GUÍA DE PVE",
+    eldenAlt: "Página principal de Elden Ring Archive",
+    eldenVisit: "Abrir Elden Ring Archive",
     eldenDescription:
-      "El próximo sitio de la red estará dedicado a Elden Ring. Está en desarrollo y aún no tiene una versión pública.",
+      "Una guía práctica de Elden Ring con configuraciones PvE, equipo, estrategias contra jefes y artículos del juego base y su expansión.",
     networkFooter:
       "Trabajo continuo en productos: organizar contenido, conectar materiales y mejorar las interfaces a medida que crecen los recursos.",
     approachEyebrow: "03 / MI ENFOQUE",
@@ -683,8 +692,11 @@ window.portfolioTranslations = {
       "Tài nguyên về Zenless Zone Zero, liên kết nhân vật, trang bị và hướng dẫn qua tìm kiếm và đồ thị tri thức.",
     zzzAlt: "Trang chủ ZZZ Archive",
     development: "ĐANG XÂY DỰNG",
+    eldenType: "CẨM NANG PVE",
+    eldenAlt: "Trang chủ Elden Ring Archive",
+    eldenVisit: "Mở Elden Ring Archive",
     eldenDescription:
-      "Website tiếp theo trong mạng lưới dành cho Elden Ring. Hiện đang phát triển và chưa có phiên bản công khai.",
+      "Cẩm nang PvE Elden Ring với lối xây dựng nhân vật, trang bị, chiến thuật đánh trùm và hướng dẫn cho trò chơi gốc cùng bản mở rộng.",
     networkFooter:
       "Liên tục phát triển sản phẩm: tổ chức nội dung, liên kết tài liệu và cải thiện giao diện khi tài nguyên mở rộng.",
     approachEyebrow: "03 / CÁCH LÀM VIỆC",
@@ -854,8 +866,11 @@ window.portfolioTranslations = {
     zzzDescription: "绝区零资料网站，通过搜索和知识图谱连接角色、装备与攻略。",
     zzzAlt: "ZZZ Archive 首页",
     development: "开发中",
+    eldenType: "PVE 实战手册",
+    eldenAlt: "Elden Ring Archive 首页",
+    eldenVisit: "打开 Elden Ring Archive",
     eldenDescription:
-      "系列中的下一个网站将围绕艾尔登法环展开。目前正在开发，尚无公开版本。",
+      "艾尔登法环 PvE 实用资料站，涵盖角色构筑、装备、首领打法，以及本体和资料片攻略。",
     networkFooter:
       "持续的产品实践：整理内容、建立资料之间的联系，并随着网站的发展改进界面。",
     approachEyebrow: "03 / 开发方式",

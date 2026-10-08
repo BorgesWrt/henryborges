@@ -10,6 +10,7 @@ const projects = [
   ["lines", "https://lines-of-arts.netlify.app/", "lines-of-arts"],
   ["ashen", "https://ashen-archive.pages.dev/", "ashen-archive"],
   ["zzz", "https://zzz-archive-b6u.pages.dev/", "zzz-archive"],
+  ["elden", "https://elden-ring-archive.netlify.app/", "elden-ring-archive"],
 ];
 const MAX_AGE = 6 * 60 * 60 * 1000;
 function isStale(entry, now = Date.now()) {
