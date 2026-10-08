@@ -1977,3 +1977,6 @@ html[lang="zh-Hans"] .hero h1 {
     transition: none !important;
   }
 }
+
+/* Hide the injected Netlify promotional badge and its card. */
+#nl-badge, .nl-badge, #nl-card { display: none !important; }
